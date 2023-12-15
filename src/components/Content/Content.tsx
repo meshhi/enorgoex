@@ -1,6 +1,10 @@
+import Start from "./Start/Start"
+
 const Content = () => {
   return (
-    <div>Content</div>
+    <div>
+      <Start></Start>
+    </div>
   )
 }
 
