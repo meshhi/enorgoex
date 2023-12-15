@@ -1,0 +1,17 @@
+.header {
+    color: #FFFFFF;
+    background-color: #00294F;
+    min-height: 72.96px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .header_nav {
+        background-color: red;
+    }
+
+    .header_logo {
+        background-color: green;
+    }
+}
