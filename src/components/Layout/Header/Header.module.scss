@@ -5,13 +5,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    // gap: 100px;
+    padding-inline: 62px;
 
     .header_nav {
-        background-color: red;
+        // background-color: red;
+
+        .header_menu {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+
+            .header_menu_item {
+                line-height: 150%;
+            }
+        }
     }
 
     .header_logo {
-        background-color: green;
+        width: 133.35px;
+        height: 41.71px;
     }
 }
