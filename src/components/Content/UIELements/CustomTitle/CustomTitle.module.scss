@@ -1,0 +1,17 @@
+.custom_title_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    color: #00294F;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 200%;
+
+    .line {
+        height: 10px;
+        width: 100%;
+        background-color: #00294F;
+    }
+}
