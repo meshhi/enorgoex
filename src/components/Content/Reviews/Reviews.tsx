@@ -1,7 +1,7 @@
-import s from './Projects.module.scss'
-import { useEffect, useState } from 'react';
+import s from './Reviews.module.scss'
+import { useState } from 'react';
 import Slider from '../UIELements/Slider/Slider';
-const Projects = () => {
+const Reviews = () => {
     const [slides, setSlides] = useState([{
         id: 1,
         url: 'project_slides/1.png',
@@ -26,11 +26,11 @@ const Projects = () => {
     },]);
 
     return (
-        <section className={s.projects_section}>
-            <h1 className={s.projects_section_title}>Наши проекты</h1>
-            <Slider slides={slides} variant="projects"></Slider>
+        <section className={s.reviews_section}>
+            <h1 className={s.reviews_section_title}>Что о нас пишут заказчики</h1>
+            <Slider slides={slides} variant="reviews"></Slider>
         </section>
     )
 }
 
-export default Projects
+export default Reviews
