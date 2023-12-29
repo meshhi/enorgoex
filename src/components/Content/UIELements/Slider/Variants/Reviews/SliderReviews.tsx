@@ -26,53 +26,55 @@ const SliderReviews = ({ slides }) => {
     }, []);
 
     return (
-        <div className={`${s.swiper_container}`}>
-            <SlidePrevButton className={`${s.slider_btn} ${s.slider_next_btn} prev-arrow`} onClick={handlePrev}></SlidePrevButton>
-            <Swiper
-                ref={sliderRef}
-                className={s.swiper}
-                modules={[Pagination, Autoplay]}
-                spaceBetween={10}
-                slidesPerView={4}
-                pagination={{
-                    el: "#containerForBulletsReviews",
-                    type: "bullets",
-                    bulletClass: "swiper-custom-bullet",
-                    bulletActiveClass: "swiper-custom-bullet-active",
-                    clickable: true,
-                }}
-                // autoplay={
-                //     {
-                //         delay: 5000,
-                //     }
-                // }
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
-            >
-                {slides.map((slide) =>
-                    <SwiperSlide
-                        className={s.swiper_slide}
-                        key={slide.id}
-                    >
-                        {({ isActive }) => {
-                            return (
-                                <div className={`${s.card} ${isActive ? s.card__active : ''}`}>
-                                    <img
-                                        className={s.card_image}
-                                        src={slide.url} alt="" />
-                                    <header className={s.card_header}>
-                                        <h2>{slide.description.title}</h2>
-                                        <span style={{ 'display': 'block' }}>{slide.description.text}</span>
-                                    </header>
-                                </div>
-                            )
-                        }}
+        <>
+            <div className={`${s.swiper_container}`}>
+                <SlidePrevButton className={`${s.slider_btn} ${s.slider_next_btn} prev-arrow`} onClick={handlePrev}></SlidePrevButton>
+                <Swiper
+                    ref={sliderRef}
+                    className={s.swiper}
+                    modules={[Pagination, Autoplay]}
+                    spaceBetween={10}
+                    slidesPerView={4}
+                    pagination={{
+                        el: "#containerForBulletsReviews",
+                        type: "bullets",
+                        bulletClass: "swiper-custom-bullet",
+                        bulletActiveClass: "swiper-custom-bullet-active",
+                        clickable: true,
+                    }}
+                    // autoplay={
+                    //     {
+                    //         delay: 5000,
+                    //     }
+                    // }
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                >
+                    {slides.map((slide) =>
+                        <SwiperSlide
+                            className={s.swiper_slide}
+                            key={slide.id}
+                        >
+                            {({ isActive }) => {
+                                return (
+                                    <div className={`${s.card} ${isActive ? s.card__active : ''}`}>
+                                        <img
+                                            className={s.card_image}
+                                            src={slide.url} alt="" />
+                                        <header className={s.card_header}>
+                                            <h2>{slide.description.title}</h2>
+                                            <span style={{ 'display': 'block' }}>{slide.description.text}</span>
+                                        </header>
+                                    </div>
+                                )
+                            }}
 
-                    </SwiperSlide>)}
-                <div id="containerForBulletsReviews"></div>
-            </Swiper>
-            <SlideNextButton className={`${s.slider_btn} ${s.slider_next_btn} next-arrow`} onClick={handleNext}></SlideNextButton>
-        </div>
+                        </SwiperSlide>)}
+                </Swiper>
+                <SlideNextButton className={`${s.slider_btn} ${s.slider_next_btn} next-arrow`} onClick={handleNext}></SlideNextButton>
+            </div>
+            <div id="containerForBulletsReviews"></div>
+        </>
     )
 }
 
