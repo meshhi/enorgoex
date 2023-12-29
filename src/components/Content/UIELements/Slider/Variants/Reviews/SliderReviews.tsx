@@ -33,8 +33,8 @@ const SliderReviews = ({ slides }) => {
                     ref={sliderRef}
                     className={s.swiper}
                     modules={[Pagination, Autoplay]}
-                    spaceBetween={10}
-                    slidesPerView={4}
+                    spaceBetween={30}
+                    slidesPerView={3}
                     pagination={{
                         el: "#containerForBulletsReviews",
                         type: "bullets",
