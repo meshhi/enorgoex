@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    height: 275px;
+    background-color: #00294F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+
+    .navigation {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 22px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .logo_container {
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        gap: 25px;
+
+        .logo_container_image {
+            opacity: .8;
+        }
+
+        .logo_container_btn {
+            width: 100%;
+            height: 40.9px;
+            color: #00294F;
+            font-size: 16px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 18px;
+
+        .contact_logos {
+            list-style-type: none;
+            display: flex;
+            gap: 19px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 47px;
+
+            .contact_logos_item {
+                width: 58px;
+                height: 58px;
+                opacity: .8;
+                
+                .icon {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+}

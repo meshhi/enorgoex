@@ -36,7 +36,8 @@
   width: auto;
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: start;
+  align-self: start;
 
   .swiper-custom-bullet {
     display: block;

@@ -9,6 +9,10 @@ import s from './SliderReviews.module.scss'
 import { SlideNextButton } from '../../Buttons/SlideNextButton';
 import { SlidePrevButton } from '../../Buttons/SlidePrevButton';
 import { Icon } from '@iconify/react';
+import { EffectFade } from 'swiper/modules';
+import { EffectCreative } from 'swiper/modules';
+import 'swiper/scss/effect-creative';
+import 'swiper/scss/effect-fade';
 
 const SliderReviews = ({ slides }) => {
     const sliderRef = useRef(null);
@@ -33,8 +37,8 @@ const SliderReviews = ({ slides }) => {
                     ref={sliderRef}
                     className={s.swiper}
                     modules={[Pagination, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={3}
+                    spaceBetween={20}
+                    slidesPerView={4}
                     pagination={{
                         el: "#containerForBulletsReviews",
                         type: "bullets",
@@ -44,7 +48,7 @@ const SliderReviews = ({ slides }) => {
                     }}
                     // autoplay={
                     //     {
-                    //         delay: 5000,
+                    //         delay: 1000,
                     //     }
                     // }
                     onSwiper={(swiper) => console.log(swiper)}
