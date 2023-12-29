@@ -1,14 +1,16 @@
-import { useSwiper } from 'swiper/react';
 import { Icon } from '@iconify/react';
 import s from './SlideButton.module.scss'
 
-export const SlidePrevButton = () => {
-    const swiper = useSwiper();
+export const SlidePrevButton = ({className, onClick}) => {
     return (
-        <Icon
-            icon="ep:arrow-up"
-            className={`${s.slider_btn} ${s.slider_prev_btn}`}
-            onClick={() => swiper.slidePrev()}
-        />
+        <div             
+        className={`${s.slider_btn} ${s.slider_prev_btn} ${className ? className : ''}`}
+        onClick={onClick}>
+            
+            <Icon
+                icon="ep:arrow-up"
+                className={s.icon}
+            />
+        </div>
     );
 }
