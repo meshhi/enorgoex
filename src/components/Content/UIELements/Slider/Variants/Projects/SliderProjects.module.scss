@@ -29,15 +29,15 @@
         transform: rotate(-90deg);
     }
 
-    .slider_slide_container {
-        position: relative;
+    .slider_image {
 
-        .slider_slide{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
     }
 
+    .slider_header {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        text-align: center;
+    }
 }

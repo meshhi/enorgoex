@@ -23,6 +23,27 @@ const Reviews = () => {
             title: 'Project 3',
             text: 'teeeext'
         }
+    }, {
+        id: 4,
+        url: 'project_slides/3.png',
+        description: {
+            title: 'Project 3',
+            text: 'teeeext'
+        }
+    }, {
+        id: 5,
+        url: 'project_slides/3.png',
+        description: {
+            title: 'Project 3',
+            text: 'teeeext'
+        }
+    }, {
+        id: 6,
+        url: 'project_slides/3.png',
+        description: {
+            title: 'Project 3',
+            text: 'teeeext'
+        }
     },]);
 
     return (

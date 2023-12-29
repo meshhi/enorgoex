@@ -38,8 +38,8 @@ const SliderProjects = ({ slides }) => {
                         className={s.slider_slide}
                         key={slide.id}
                     >
-                        <img src={slide.url} alt="" />
-                        <header>
+                        <img className={s.slider_image} src={slide.url} alt="" />
+                        <header className={s.slider_header}>
                             <h2>{slide.description.title}</h2>
                             <span style={{ 'display': 'block' }}>{slide.description.text}</span>
                         </header>

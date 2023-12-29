@@ -4,7 +4,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+
+    .card {
+        width: 100%;
+        .card_image {
+            width: 100%;
+        }
+
+        .card_header {
+
+        }
+    }
+
+    .card__active {
+        width: 500px;
+    }
 
     .slider_btn {
         color: #006DB1;
@@ -27,17 +42,6 @@
     .slider_prev_btn{
         left: 0;
         transform: rotate(-90deg);
-    }
-
-    .slider_slide_container {
-        position: relative;
-
-        .slider_slide{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
     }
 
 }

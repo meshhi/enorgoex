@@ -16,7 +16,7 @@ const SliderReviews = ({ slides }) => {
                 className={s.slider}
                 modules={[Pagination, Autoplay]}
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={4}
                 pagination={{
                     el: "#containerForBulletsReviews",
                     type: "bullets",
@@ -38,11 +38,21 @@ const SliderReviews = ({ slides }) => {
                         className={s.slider_slide}
                         key={slide.id}
                     >
-                        <img src={slide.url} alt="" />
-                        <header>
-                            <h2>{slide.description.title}</h2>
-                            <span style={{ 'display': 'block' }}>{slide.description.text}</span>
-                        </header>
+                        {({ isActive }) => {
+                            console.log('active');
+                            return(
+                            <div className={`${s.card} ${isActive ? s.card__active : ''}`}>
+                                <img 
+                                className={s.card_image}
+                                src={slide.url} alt="" />
+                                <header className={s.card_header}>
+                                    <h2>{slide.description.title}</h2>
+                                    <span style={{ 'display': 'block' }}>{slide.description.text}</span>
+                                </header>
+                            </div>                      
+                            )
+                        }}
+
                     </SwiperSlide>)}
                 <SlideNextButton></SlideNextButton>
 

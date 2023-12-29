@@ -7,23 +7,41 @@
 }
 
 #containerForBulletsProjects {
-  width: 100px;
-  height: 100px;
+  margin-top: 50px;
+  width: auto;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
   .swiper-custom-bullet {
     display: block;
-    width: 10px;
-    height: 10px;
-    background-color: green;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+
+  .swiper-custom-bullet-active {
+    background-color: #7B7B7B;
   }
 }
 
 #containerForBulletsReviews {
-  width: 100px;
-  height: 100px;
+  margin-top: 50px;
+  width: auto;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
   .swiper-custom-bullet {
     display: block;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+
+  .swiper-custom-bullet-active {
+    background-color: #7B7B7B;
   }
 }
