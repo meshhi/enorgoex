@@ -13,7 +13,7 @@ const Content = () => {
       <TypesOfJob></TypesOfJob>
       <Projects></Projects>
       <Reviews></Reviews>
-      {/* <Geography></Geography> */}
+      <Geography></Geography>
       <Footer></Footer>
     </main>
   )
