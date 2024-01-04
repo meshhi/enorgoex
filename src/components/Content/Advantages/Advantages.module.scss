@@ -7,13 +7,12 @@
 
     .advantages_list {
         margin: 2rem;
-        width: 80%;
-        height: 300px;
+        width: auto;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-
-        background-color: cadetblue;
+        gap: 20px;
     }
 }

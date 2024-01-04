@@ -3,4 +3,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+
+    width: 172px;
+    height: 238px;
+    border: 1px solid #00294f85;
+
+    .card_icon {
+        position: relative;
+        width: 83px;
+        height: 83px;
+
+        .circle {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: #00294F;
+        }
+
+        .icon_container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                width: 50%;
+                height: 50%;
+                color: white;
+            }
+        }
+    }
+
+    .card_text {
+        text-align: center;
+    }
 }
