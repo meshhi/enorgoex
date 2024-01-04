@@ -3,46 +3,64 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 
     width: 172px;
     height: 238px;
     border: 1px solid #00294f85;
+    background-color: white;
+    padding: 16px;
 
-    .card_icon {
-        position: relative;
-        width: 83px;
-        height: 83px;
-
-        .circle {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            border-radius: 50%;
-            background-color: #00294F;
-        }
-
-        .icon_container {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .icon {
-                width: 50%;
-                height: 50%;
-                color: white;
+    .card_icon_container {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card_icon {
+            position: relative;
+            width: 83px;
+            height: 83px;
+    
+            .circle {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                border-radius: 50%;
+                background-color: #00294F;
+            }
+    
+            .icon_container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .icon {
+                    width: 50%;
+                    height: 50%;
+                    color: white;
+                }
             }
         }
     }
 
-    .card_text {
-        text-align: center;
+
+    .card_text_container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+        .card_text {
+            flex: 1;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            color: #00294F;
+        }
     }
 }
