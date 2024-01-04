@@ -43,6 +43,7 @@ const SliderProjects = ({ slides }) => {
                         bulletActiveClass: "swiper-custom-bullet-active",
                         clickable: true,
                     }}
+                    loop={true}
                     autoplay={
                         {
                             delay: 5000,

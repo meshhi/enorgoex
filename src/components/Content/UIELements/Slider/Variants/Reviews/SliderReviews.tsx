@@ -46,11 +46,12 @@ const SliderReviews = ({ slides }) => {
                         bulletActiveClass: "swiper-custom-bullet-active",
                         clickable: true,
                     }}
-                    // autoplay={
-                    //     {
-                    //         delay: 1000,
-                    //     }
-                    // }
+                    loop={true}
+                    autoplay={
+                        {
+                            delay: 10000,
+                        }
+                    }
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
