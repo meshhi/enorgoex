@@ -21,17 +21,13 @@
         text-transform: uppercase;
 
         .start_header__main {
+            padding-inline: 1rem;
             font-weight: 700;
             font-size: 60px;
             line-height: 78px;
-        }
-
-        @media screen and (max-width: 900px) {
-            .start_header__main {
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 48px;
-            }
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .start_header__additional {
@@ -62,6 +58,7 @@
             text-align: center;
             border: 1.5px solid #00294f85;
             background-color: #FFFFFF;
+            padding: 8px;
         }
     }
 
@@ -73,6 +70,47 @@
         height: 56px;
         font-size: 20px;
     }
+}
 
+@media screen and (max-width: 900px) {
+    .start {
+        padding: 20px 0;
 
+        .start_header {
+            .start_header__main {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .start {
+        padding: 20px 0;
+
+        .start_header {
+            .start_header__main {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 45px;
+            }
+
+        }
+
+        .start_activities {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+    
+            .start_activities_item {
+
+            }
+        }
+    }
 }
