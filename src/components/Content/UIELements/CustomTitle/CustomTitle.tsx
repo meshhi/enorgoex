@@ -1,4 +1,5 @@
 import s from './CustomTitle.module.scss'
+import { useMediaQuery } from 'react-responsive'
 
 interface ICustomTitleProps {
     title: string;
@@ -27,13 +28,17 @@ const colorObj = {
 }
 
 const CustomTitle = ({ title, position, color }: ICustomTitleProps) => {
+ 
+    const isMobileOrTablet = useMediaQuery({ query: '(max-width: 808px)' });
     return (
         <div className={s.custom_title_container} style={{"color": colorObj[color]}}>
             <div className={s.line} style={{
                 "flexBasis": positionObj[position]["l"],
                 "backgroundColor": colorObj[color]
             }}></div>
-            <h1 className={s.title}>{title}</h1>
+            <h1 className={s.title}
+            style={{"textWrap": isMobileOrTablet && title === "География присутствия" ? "balance" : "nowrap"}}
+            >{title}</h1>
             <div className={s.line} style={{
                 "flexBasis": positionObj[position]["r"],
                 "backgroundColor": colorObj[color]

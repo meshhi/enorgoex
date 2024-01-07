@@ -1,9 +1,7 @@
 .slider_btn {
     color: #006DB1;
     width: 77px;
-    min-width: 77px;
     height: 47px;
-    min-height: 47px;
 
     &:hover {
         cursor: pointer;
@@ -21,4 +19,11 @@
 
 .slider_prev_btn {
     transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 600px) {
+    .slider_btn {
+        width: 47px;
+        height: 25px;
+    }
 }

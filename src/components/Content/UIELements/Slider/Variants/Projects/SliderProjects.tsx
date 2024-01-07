@@ -49,8 +49,8 @@ const SliderProjects = ({ slides }) => {
                             delay: 5000,
                         }
                     }
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => {}}
+                    onSlideChange={() => {}}
                 >
 
                     {slides.map((slide) =>

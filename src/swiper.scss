@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+    overflow: hidden;
+
 }
 
 .swiper-wrapper {
@@ -12,7 +15,7 @@
 };
 
 #containerForBulletsProjects {
-  margin-top: 50px;
+  margin-top: 1rem;
   width: auto;
   display: flex;
   gap: 15px;
@@ -32,7 +35,8 @@
 }
 
 #containerForBulletsReviews {
-  margin-top: 50px;
+  margin-top: 1rem;
+  margin-left: 16%;
   width: auto;
   display: flex;
   gap: 15px;

@@ -16,3 +16,14 @@
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .advantages {
+        .advantages_list {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}

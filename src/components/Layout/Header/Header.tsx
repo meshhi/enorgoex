@@ -3,18 +3,18 @@ import s from './Header.module.scss'
 import logo_white from '/logo_white.png'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
-
-const HeaderMenu = () => {
-  return(        
-  <ul className={s.header_menu}>
-    <Link className={s.header_menu_item} to="#start">Главная</Link>
-    <Link className={s.header_menu_item} to="#advantages">Преимущества</Link>
-    <Link className={s.header_menu_item} to="#typesofjob">Услуги</Link>
-    <Link className={s.header_menu_item} to="#projects">Проекты</Link>
-    <Link className={s.header_menu_item} to="#about">О нас</Link>
-    <Link className={s.header_menu_item} to="#contacts">Контакты</Link>
-  </ul>)
-}
+import NavMenu from '../../Content/UIELements/NavMenu/NavMenu'
+// const HeaderMenu = () => {
+//   return(        
+//   <ul className={s.header_menu}>
+//     <Link className={s.header_menu_item} to="#start">Главная</Link>
+//     <Link className={s.header_menu_item} to="#advantages">Преимущества</Link>
+//     <Link className={s.header_menu_item} to="#typesofjob">Услуги</Link>
+//     <Link className={s.header_menu_item} to="#projects">Проекты</Link>
+//     <Link className={s.header_menu_item} to="#about">О нас</Link>
+//     <Link className={s.header_menu_item} to="#contacts">Контакты</Link>
+//   </ul>)
+// }
 
 const Header = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -42,8 +42,7 @@ const Header = () => {
             className={s.icon}
             />
           </div>
-          : <HeaderMenu></HeaderMenu>
-            
+          : <NavMenu></NavMenu>
         }
       </nav>
       {

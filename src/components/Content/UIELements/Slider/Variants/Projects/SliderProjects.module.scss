@@ -8,7 +8,7 @@
 
     .swiper {
         width: 100%;
-        min-height: 400px;
+        min-height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,16 +24,26 @@
             }
     
             .card_header {
-                margin-top: 50px;
+                margin-top: 20px;
                 display: flex;
                 flex-direction: column;
-                gap: 23px;
+                gap: 12px;
                 text-align: center;
             }
         }
     
         .card__active {
 
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .swiper_container  {
+        margin-top: 0rem;
+
+        .swiper {
+            min-height: 200px;
         }
     }
 }

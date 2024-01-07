@@ -1,0 +1,12 @@
+.nav_menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+
+  .nav_menu_item {
+      line-height: 150%;
+      text-decoration: none;
+      color: inherit;
+  }
+}

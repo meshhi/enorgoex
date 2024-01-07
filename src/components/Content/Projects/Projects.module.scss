@@ -1,15 +1,24 @@
 .projects_section {
-    padding: 100px 78px 100px;
+    padding: 50px 0 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 
     .projects_section_title {
         color: #00294F;
         font-size: 45px;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .projects_section {
+        padding: 40px 0;
+        .projects_section_title {
+            font-size: 1.5em;
+        }
     }
 }

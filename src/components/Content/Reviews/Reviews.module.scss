@@ -1,5 +1,5 @@
 .reviews_section {
-    padding: 1rem 78px 100px;
+    padding: 1rem 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,5 +11,14 @@
         color: #00294F;
         font-size: 45px;
         text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .reviews_section {
+        .reviews_section_title {
+            font-size: 1.5em;
+        }
     }
 }

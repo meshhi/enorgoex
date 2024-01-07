@@ -13,6 +13,7 @@ import { EffectFade } from 'swiper/modules';
 import { EffectCreative } from 'swiper/modules';
 import 'swiper/scss/effect-creative';
 import 'swiper/scss/effect-fade';
+import { useMediaQuery } from 'react-responsive'
 
 const SliderReviews = ({ slides }) => {
     const sliderRef = useRef(null);
@@ -29,6 +30,9 @@ const SliderReviews = ({ slides }) => {
         sliderRef.current.swiper.slideNext();
     }, []);
 
+    const isMedium = useMediaQuery({ query: '(max-width: 1600px) and (min-width: 1001px)' });
+    const isMobileOrTablet = useMediaQuery({ query: '(max-width: 1000px)' });
+    const slidesPerView = isMedium ? 2 : (isMobileOrTablet ? 1 : 4);
     return (
         <>
             <div className={`${s.swiper_container}`}>
@@ -38,7 +42,7 @@ const SliderReviews = ({ slides }) => {
                     className={s.swiper}
                     modules={[Pagination, Autoplay]}
                     spaceBetween={20}
-                    slidesPerView={4}
+                    slidesPerView={slidesPerView}
                     pagination={{
                         el: "#containerForBulletsReviews",
                         type: "bullets",
@@ -52,8 +56,8 @@ const SliderReviews = ({ slides }) => {
                             delay: 10000,
                         }
                     }
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => {}}
+                    onSlideChange={() => {}}
                 >
                     {slides.map((slide) =>
                         <SwiperSlide

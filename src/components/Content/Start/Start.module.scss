@@ -5,14 +5,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 76px 0;
+    padding: 76px 0 0;
     gap: 31px;
 
     .start_header {
         // width: 63%;
         color: #00294F;
         text-align: center;
-        margin-bottom: 68px;
+        margin-bottom: 38px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -74,43 +74,80 @@
 
 @media screen and (max-width: 900px) {
     .start {
-        padding: 20px 0;
+        padding: 20px 0 0;
 
         .start_header {
             .start_header__main {
-                font-weight: 700;
                 font-size: 40px;
-                line-height: 45px;
+                line-height: 65px;
             }
+        }
 
+        .start_activities {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5rem;
+    
+            .start_activities_item {
+                width: 60%;
+            }
         }
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 608px) {
     .start {
-        padding: 20px 0;
+        .start_header {
+            gap: 15px;
+            margin-bottom: 4px;
 
+            .start_header__main {
+                font-size: 30px;
+                line-height: 50px;
+            }
+
+            .start_header__additional {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .start {
         .start_header {
             .start_header__main {
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 45px;
+                font-size: 25px;
+                line-height: 40px;
             }
 
         }
 
         .start_activities {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
+            gap: .5rem;
     
             .start_activities_item {
-
+                width: 80%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .start {
+        .start_header {
+
+
+            .start_header__main {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .start_header__additional {
+                font-size: 14px;
+            }
+
         }
     }
 }

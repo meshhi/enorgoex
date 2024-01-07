@@ -17,6 +17,7 @@
         width: 78%;
         gap: 35px;
         padding-top: 62px;
+        padding-bottom: 2rem;
 
         .grid_item {
             height: 285px;
@@ -65,3 +66,14 @@
 
 }
 
+@media screen and (max-width: 460px) {
+    .types_of_job_container {
+        .types_of_job_grid {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
