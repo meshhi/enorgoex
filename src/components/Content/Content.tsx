@@ -9,7 +9,10 @@ import s from './Content.module.scss'
 
 const Content = () => {
   return (
-    <main className={s.content}>
+    <main 
+    className={s.content}
+    style={{"backgroundImage": "url(fon.png)"}}
+    >
       <Start></Start>
       <Advantages></Advantages>
       <TypesOfJob></TypesOfJob>
