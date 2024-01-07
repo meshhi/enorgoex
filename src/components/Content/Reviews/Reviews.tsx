@@ -47,7 +47,7 @@ const Reviews = () => {
     },]);
 
     return (
-        <section className={s.reviews_section}>
+        <section className={s.reviews_section} id="about">
             <h1 className={s.reviews_section_title}>Что о нас пишут заказчики</h1>
             <Slider slides={slides} variant="reviews"></Slider>
         </section>

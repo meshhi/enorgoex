@@ -27,7 +27,7 @@ const advantageCards = [{
 
 const Advantages = () => {
   return (
-    <section className={s.advantages}>
+    <section className={s.advantages} id="advantages">
         <CustomTitle title="Преимущества" position="center" color="black"></CustomTitle>
         <div className={s.advantages_list}>{
           advantageCards.map(el => <Card key={el.id} text={el.text} icon={el.icon}></Card>)

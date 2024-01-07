@@ -29,7 +29,7 @@ const TypesOfJob = () => {
   }]);
 
   return (
-      <section className={s.types_of_job_container}>
+      <section className={s.types_of_job_container} id="typesofjob">
         <CustomTitle title="Виды работ" position="right" color="white"></CustomTitle>
         <div className={s.types_of_job_grid}>
           {jobs?.map(job => {

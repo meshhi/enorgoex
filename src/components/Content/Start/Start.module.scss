@@ -26,6 +26,14 @@
             line-height: 78px;
         }
 
+        @media screen and (max-width: 900px) {
+            .start_header__main {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 48px;
+            }
+        }
+
         .start_header__additional {
             font-size: 20px;
             font-weight: 500;
@@ -65,4 +73,6 @@
         height: 56px;
         font-size: 20px;
     }
+
+
 }

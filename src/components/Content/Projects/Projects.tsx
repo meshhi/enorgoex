@@ -26,7 +26,7 @@ const Projects = () => {
     },]);
 
     return (
-        <section className={s.projects_section}>
+        <section className={s.projects_section} id="projects">
             <h1 className={s.projects_section_title}>Наши проекты</h1>
             <Slider slides={slides} variant="projects"></Slider>
         </section>

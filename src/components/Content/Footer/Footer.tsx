@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 const Footer = () => {
   return (
-    <footer className={s.footer}>
+    <footer className={s.footer} id="contacts">
       <ul className={s.navigation}>
         <li>Главная</li>
         <li>Преимущества</li>

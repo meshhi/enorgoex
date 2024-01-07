@@ -1,7 +1,7 @@
 .header {
     color: #FFFFFF;
     background-color: #00294F;
-    height: 72.96px;
+    height: 73px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,6 +24,8 @@
 
             .header_menu_item {
                 line-height: 150%;
+                text-decoration: none;
+                color: inherit;
             }
         }
     }
@@ -38,19 +40,12 @@
     }
 
     @media screen and (max-width: 414px) {
-        // height: 40px;
-        
-        .header_nav {
-            display: none;
-        }
-
         .header_phone {
             display: none;
         }
 
         .header_logo {
-            width: 40.35px;
-            height: 41.71px;
+
         }
     }
 }

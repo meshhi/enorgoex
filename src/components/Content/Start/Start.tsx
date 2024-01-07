@@ -4,7 +4,7 @@ import { useState } from 'react'
 const Start = () => {
   const [activities, setActivities] = useState<string[]>(["Строим кабельные линии", "Строим воздушные линии", "Строим трансформаторные подстанции", "Испытываем электрические подсети"]);
   return (
-    <section className={s.start}>
+    <section className={s.start} id="start">
         <header className={s.start_header}>
             <h1 className={s.start_header__main}>
                Решаем вопрос <br></br>с энергоснабжением
