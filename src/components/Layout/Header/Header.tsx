@@ -4,6 +4,7 @@ import logo_white from '/logo_white.png'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 import NavMenu from '../../Content/UIELements/NavMenu/NavMenu'
+import { useState } from "react";
 // const HeaderMenu = () => {
 //   return(        
 //   <ul className={s.header_menu}>
@@ -16,15 +17,44 @@ import NavMenu from '../../Content/UIELements/NavMenu/NavMenu'
 //   </ul>)
 // }
 
+const BurgerMenu = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  return(  
+    <div className={s.burger_container}>
+      <div 
+      className={s.icon_container}
+      onClick={() => {
+        setOpen(prev => !prev);
+      }}
+      >
+        {
+        isOpen
+          ?
+          <Icon
+          icon="iconamoon:menu-burger-horizontal-fill"
+          className={s.icon}
+          />
+          : 
+          <Icon
+          icon="iconamoon:menu-burger-vertical-fill"
+          className={s.icon}
+          />
+        }
+      </div>
+      <div className={s.burger_menu}>
+      {
+        isOpen
+        ? <NavMenu className={s.burger_nav_menu} itemClassName={s.burger_nav_menu_item} itemCallback={() => setOpen(false)}></NavMenu>
+        : false
+      }
+      </div>
+    </div>
+  )
+}
+
 const Header = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isMobileOrTablet = useMediaQuery({ query: '(max-width: 1224px)' })
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' })
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   return (
     <header className={s.header}>
@@ -35,13 +65,7 @@ const Header = () => {
       <nav className={s.header_nav}>
         {
           isMobileOrTablet
-          ? 
-          <div className={s.icon_container}>
-            <Icon
-            icon="iconamoon:menu-burger-horizontal-fill"
-            className={s.icon}
-            />
-          </div>
+          ? <BurgerMenu></BurgerMenu>
           : <NavMenu></NavMenu>
         }
       </nav>

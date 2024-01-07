@@ -1,15 +1,26 @@
 import { Link } from 'react-router-dom'
 import s from './NavMenu.module.scss'
 
-const NavMenu = ({className, itemClassName}) => {
+const NavMenu = ({className, itemClassName, itemCallback}) => {
+  const anchors = [
+    ["#start", "Главная"],
+    ["#advantages", "Преимущества"],
+    ["#typesofjob", "Услуги"],
+    ["#projects", "Проекты"],
+    ["#about", "О нас"],
+    ["#contacts", "Контакты"],
+  ]
     return(        
     <ul className={className ? className : s.nav_menu}>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#start">Главная</Link>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#advantages">Преимущества</Link>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#typesofjob">Услуги</Link>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#projects">Проекты</Link>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#about">О нас</Link>
-      <Link className={itemClassName ? itemClassName : s.nav_menu_item} to="#contacts">Контакты</Link>
+      {
+        anchors.map(el => {
+          return(<Link 
+            className={itemClassName ? itemClassName : s.nav_menu_item} 
+            to={el[0]}
+            onClick={itemCallback ? itemCallback : () => {}}
+            >{el[1]}</Link>)
+        })
+      }
     </ul>)
   }
 

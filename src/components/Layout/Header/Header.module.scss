@@ -16,6 +16,37 @@
 
     .header_nav {
 
+        .burger_container {
+            position: relative;
+            .burger_menu {
+                position: absolute;
+                right: 0;
+
+                .burger_nav_menu{
+                display: flex;
+                flex-direction: column;
+                background-color: #00294F;
+                padding: 1rem;
+                width: auto;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 22px;
+                font-size: 15px;
+                font-weight: 500;
+            
+                    .burger_nav_menu_item {
+                        line-height: 120%;
+                        text-decoration: none;
+                        color: inherit;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
         .header_menu {
             list-style-type: none;
             display: flex;

@@ -5,11 +5,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 76px 0 0;
-    gap: 31px;
+    padding: 10px 0;
+    gap: 10px;
 
     .start_header {
-        // width: 63%;
         color: #00294F;
         text-align: center;
         margin-bottom: 38px;
@@ -17,7 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 31px;
+        gap: 10px;
         text-transform: uppercase;
 
         .start_header__main {
@@ -69,8 +68,10 @@
         width: 301px;
         height: 56px;
         font-size: 20px;
+        margin-top: 20px;
     }
 }
+
 
 @media screen and (max-width: 900px) {
     .start {
