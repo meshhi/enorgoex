@@ -1,11 +1,12 @@
 .start {
+    padding: 40px 0 0;
     width: 78%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 0;
+    // padding: 10px 0;
     gap: 10px;
 
     .start_header {
@@ -18,15 +19,17 @@
         align-items: center;
         gap: 10px;
         text-transform: uppercase;
+        max-width: 798px;
+
 
         .start_header__main {
-            padding-inline: 1rem;
             font-weight: 700;
             font-size: 60px;
             line-height: 78px;
             white-space: normal;
             overflow: hidden;
             text-overflow: ellipsis;
+            text-wrap: nowrap;
         }
 
         .start_header__additional {
@@ -38,6 +41,7 @@
 
     .start_image {
         width: 100%;
+        max-width: 936px;
     }
 
     .start_activities {
@@ -47,6 +51,7 @@
         justify-content: space-between;
         width: 100%;
         color: #0856A0;
+        max-width: 936px;
 
         .start_activities_item {
             width: 220px;
@@ -75,7 +80,7 @@
 
 @media screen and (max-width: 900px) {
     .start {
-        padding: 20px 0 0;
+        padding: 30px 0 0;
 
         .start_header {
             .start_header__main {

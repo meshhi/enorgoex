@@ -23,9 +23,9 @@
     font-size: 2rem;
     position: relative;
     border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(9, 15, 20, 0.4);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(9, 15, 20, 0.4);
+    box-shadow: 4px 4px 8px 0px rgba(9, 15, 20, 0.4);
 
     .modal_close_btn {
       position: absolute;
@@ -59,7 +59,8 @@
     }
 
     .modal_content {
-
+      height: 100%;
+      width: 100%;
     }
   }
 }

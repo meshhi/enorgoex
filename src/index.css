@@ -20,6 +20,6 @@ section {
   overflow: hidden;
 }
 
-button {
+button, input {
   cursor: pointer;
 }
