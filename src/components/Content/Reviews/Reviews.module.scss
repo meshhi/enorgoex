@@ -15,6 +15,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .reviews_section {
+        min-height: 800px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .reviews_section {
         .reviews_section_title {

@@ -67,6 +67,12 @@
 
 }
 
+@media screen and (min-width: 1200px) {
+    .types_of_job_container {
+        // max-height: 700px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .types_of_job_container {
         .types_of_job_grid {

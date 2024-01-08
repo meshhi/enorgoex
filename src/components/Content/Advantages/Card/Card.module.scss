@@ -64,3 +64,32 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .card {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .card {
+        .card_icon_container {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card_icon {
+                position: relative;
+                width: 63px;
+                height: 63px;
+            }
+        }
+
+        .card_text_container {
+
+            .card_text {
+                font-size: .8rem;
+            }
+        }
+    }
+}

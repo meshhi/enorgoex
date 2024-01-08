@@ -13,6 +13,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .geography {
+        min-height: 700px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .geography {
         height: 600px;

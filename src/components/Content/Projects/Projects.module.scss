@@ -14,6 +14,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .projects_section {
+        min-height: 800px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .projects_section {
         padding: 40px 0;
