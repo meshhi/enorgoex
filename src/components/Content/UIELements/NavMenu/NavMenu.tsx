@@ -15,6 +15,7 @@ const NavMenu = ({className, itemClassName, itemCallback}) => {
       {
         anchors.map(el => {
           return(<Link 
+            key={el[0]}
             className={itemClassName ? itemClassName : s.nav_menu_item} 
             to={el[0]}
             onClick={itemCallback ? itemCallback : () => {}}
