@@ -23,6 +23,12 @@
             text-decoration: none;
             color: inherit;
             font-weight: 400;
+            transition: all .1s ease-in;
+            cursor: pointer;
+      
+            &:hover {
+              color: #EAB269;
+            }
         }
     }
 

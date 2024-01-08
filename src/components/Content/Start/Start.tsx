@@ -1,11 +1,16 @@
-import s from './Start.module.scss'
 import { useState } from 'react'
-import Modal from '../UIELements/Modal/Modal';
 import { createPortal } from 'react-dom';
+import s from './Start.module.scss'
+import Modal from '../UIELements/Modal/Modal';
+import SubmitRequestForm from '../Forms/SubmitRequestForm';
 
 const Start = () => {
   const [activities, setActivities] = useState<string[]>(["Строим кабельные линии", "Строим воздушные линии", "Строим трансформаторные подстанции", "Испытываем электрические подсети"]);
   const [isOpen, setOpen] = useState<boolean>(false);
+  const closeModalWithScrollReturn = () => {
+    setOpen(false);
+    document.body.style.overflow = 'unset';
+  }
   
   return (
     <section className={s.start} id="start">
@@ -26,8 +31,8 @@ const Start = () => {
             Оставить заявку
         </button>
         {createPortal(
-        <Modal isOpen={isOpen} handleClose={() => setOpen(false)}>
-          <div>haha</div>
+        <Modal isOpen={isOpen} handleClose={closeModalWithScrollReturn}>
+          <SubmitRequestForm handleFormClose={closeModalWithScrollReturn}></SubmitRequestForm>
         </Modal>,
         document.body
       )}

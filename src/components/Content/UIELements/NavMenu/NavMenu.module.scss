@@ -8,5 +8,14 @@
       line-height: 150%;
       text-decoration: none;
       color: inherit;
+      transition: all .1s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        color: #EAB269;
+      }
   }
+
+
+
 }

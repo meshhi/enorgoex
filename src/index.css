@@ -19,3 +19,7 @@ body {
 section {
   overflow: hidden;
 }
+
+button {
+  cursor: pointer;
+}
